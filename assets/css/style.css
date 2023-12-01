@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Roboto+Flex:opsz,wght@8..144,200&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Roboto+Condensed:wght@100&family=Roboto+Flex:opsz,wght@8..144,200&family=Sacramento&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+/* universal start */
+.banner-bg{ background: #F1E7FF; }
+.popular-bg{ background: #FDF6ED;}
+.parents-bg{ background: #FFFFFF;}
+.parents-circle{ background: #FEE9CA;}
+.footer-end{ background: #091629;}
+
+.text-orange{ color: #EA512E;}
+.text-yellow{ color: #F5890D;}
+
+.button-orange{ background: #EA512E;}
+.button-yellow{ background: #F5890D;}
+.pt-10{ padding-top: 140px; }
+.f-size{ font-size: 56px; font-weight: 1000;}
+.px-space{
+    padding-left: 60px;
+}
+h1, h2{
+    color: #1B0238;
+    font-family: "Catamaran", sans-serif;
+}
+h2{
+    font-size: 42px;
+}
+h5{
+    font-size: 20px;
+    color: #ea512e;
+    font-weight: 600;
+    font-family: "Sacramento"; 
+}
+p{
+    line-height: 1.6;
+    font-size: 15px;
+    font-weight: 500;
+    color: #6b6b84;
+    font-family: 'Roboto Flex', sans-serif;
+}
+.btn, .btn1, .btn2{
+    color: #fff;
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 10px;
+    font-weight: 400px;
+    transition: 0.5s ease;
+    position: relative;
+    border: none;
+}
+.btn:hover{
+    color: #fff;
+    background-color: #F5890D;
+    transition-duration: 1s;
+}
+.btn1:hover{
+    color: #fff;
+    background-color: #F5890D;
+}
+.btn2:hover{
+    color: #fff;
+    background-color: #ea512e;
+}
+
+/* universal end */
+
+/* main banner start */
+.banner{
+    height: 700px;
+    width: 100%;
+    background: url(../img/main-banner-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.shape-1{
+    width: 90px;
+    top: 3.5%;
+    left: .7%;
+    animation: move 2s linear alternate infinite;
+}
+.shape-2{
+    width: 90px;
+    top: 9.5%;
+    left: .7%;
+    animation: move 2s linear alternate infinite;
+}
+.shape-3{
+    width: 90px;
+    top:540px;
+    left: 80px !important;
+    animation: move 2s linear alternate infinite;
+}
+.shape-4{
+    width: 90px;
+    top:550px;
+    left: .7%;
+    animation: move1 2s linear alternate infinite;
+}
+.mt-5 img{
+    width: 100%;
+    height: 550px;
+    display: inline-block;
+}
+#cloudimage img{
+    width: 100%;
+    height: 100px;
+}
+/* main banner end */
+
+/* who we are section start */
+.who ul li{
+    line-height: 40px;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Catamaran", sans-serif;
+}
+.who ul li span:hover{
+    background-color: #F5890D;
+    transition: 0.5s ease;
+}
+.who ul li span{
+   width: 30px; 
+   height: 30px; 
+   color: #fff;
+   border-radius: 50%;
+   display: inline-block;
+   font-size: 15px;
+   text-align: center;
+   align-items: center;
+   padding-top: 3px;
+   line-height: 20px;
+   font-family: "Catamaran", sans-serif;
+}
+/* who we are section end */
+
+/* popular section start */
+.topbtn a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 0px 0px 0px 13px;
+    transition: 0.5s ease;
+}
+.topbtn a:hover{
+    background-color: #F5890D;
+    transition-duration: 1s;
+}
+.cardtext h4, p{
+    text-align: left;
+}
+.cardtext h4:hover{
+    color: #EA512E;
+    transition-duration: 1s;
+}
+.cardtext .pb-4 {
+    border: none;
+    border-bottom: 1px dashed #ea512e;
+}
+/* popular section end */
+
+/* Teacher section start */
+.teacher{
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/teacher-bg.jpg);
+    background-size: cover;
+}
+.teacher .teacherimg img{
+    width: 100%;
+    height: 270px;
+    border-radius: 50%;
+}
+.teacher .socialimedia ul li{
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    display: inline-block;
+    background: #ea512e;
+    border-radius: 50%;
+    text-align: center;
+    padding: 4px;
+    margin-right: 15px;
+}
+/* Teacher section end */
+
+/* Testimonial Section Start */
+
+/* .testimonial .leftright ul li{
+    width: 34px;
+    height: 34px;
+    color: #fff;
+    display: inline-block;
+    background: #ea512e;
+    border-radius: 50%;
+    text-align: center;
+    padding: 4px;
+} */
+.carousel .quote{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background: #FFFFFF;
+    border-radius: 50%;
+    text-align: center;
+    padding: 9px;
+}
+.parents{
+    width: 100%;
+    height: 360px;
+    
+}
+
+/* Testimonial Section End */
+
+/* Upcoming Event Section Start */
+.upcoming{
+    height: 1300px;
+    background-image: url(../img/event-bg.jpg);
+    background-size: cover;
+}
+/* Upcoming Event Section End */
+
+/* Footer section start */
+footer, .footerfirst{
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.91),rgba(0, 0, 0, 0.91)),url(../img/footer-bg.jpg);
+    background-size: 100% 100%;
+}
+footer, .footersecond{
+    width: 100%;
+    height: 100px;
+    background: #091629;
+    color: #fff;
+}
+footer .socialicon ul li{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background: #ea512e;
+    border-radius: 50%;
+    text-align: center;
+    padding: 4px;
+    margin-right: 15px;
+}
+.redline {
+    border-bottom: 2px solid #ea512e;
+    
+}
+/* Footer section start */
+
+
+
+
+
+
+@keyframes move{
+    0%{}
+    100%{left:3%}
+}
+@keyframes move1{
+    0%{}
+    100%{left:53%}
+}
