@@ -15,6 +15,9 @@
 .popular-bg{ background: #FDF6ED;}
 .parents-bg{ background: #FFFFFF;}
 .parents-circle{ background: #FEE9CA;}
+.care-active{background: #d3f5fe;}
+.care-fully{background: #FBC9D5;}
+.care-safe{background: #FBD5A3;}
 .footer-end{ background: #091629;}
 
 .text-orange{ color: #EA512E;}
@@ -22,18 +25,18 @@
 
 .button-orange{ background: #EA512E;}
 .button-yellow{ background: #F5890D;}
-.pt-10{ padding-top: 140px; }
+.pt-10{ padding-top: 190px; }
+.pt-9{padding-top: 120px;}
 .f-size{ font-size: 56px; font-weight: 1000;}
 .px-space{
     padding-left: 60px;
 }
+.pb-10{padding-bottom: 100px;}
 h1, h2{
     color: #1B0238;
     font-family: "Catamaran", sans-serif;
 }
-h2{
-    font-size: 42px;
-}
+h2{ font-size: 42px;}
 h5{
     font-size: 20px;
     color: #ea512e;
@@ -74,6 +77,19 @@ p{
 
 /* universal end */
 
+/* Navbar Section Start  */
+nav .dropdown-item img{
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    border-radius: 50px;
+}
+nav .dropdown-item span{
+    font-size: 14px;
+}
+
+/* Navbar Section End  */
+
 /* main banner start */
 .banner{
     height: 700px;
@@ -84,25 +100,25 @@ p{
 }
 .shape-1{
     width: 90px;
-    top: 3.5%;
+    top: 12.5%;
     left: .7%;
     animation: move 2s linear alternate infinite;
 }
 .shape-2{
     width: 90px;
-    top: 9.5%;
+    top: 19.5%;
     left: .7%;
     animation: move 2s linear alternate infinite;
 }
 .shape-3{
     width: 90px;
-    top:540px;
+    top:525px;
     left: 80px !important;
     animation: move 2s linear alternate infinite;
 }
 .shape-4{
     width: 90px;
-    top:550px;
+    top:620px;
     left: .7%;
     animation: move1 2s linear alternate infinite;
 }
@@ -166,7 +182,32 @@ p{
     border: none;
     border-bottom: 1px dashed #ea512e;
 }
+
 /* popular section end */
+
+/* Care Section Start */
+/* .table-borderless > tbody > tr > td,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
+} */
+.circleborder{
+    width: 80px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 18px;
+    outline-style:solid;
+    outline-offset: 3px;
+    outline-width: 1px;
+    font-size: larger;
+}
+.circleborder:hover{
+    background: #EA512E;
+    color: #fff;
+    transition: 0.7s ease;
+}
+
+/* Care Section End */
 
 /* Teacher section start */
 .teacher{
@@ -194,18 +235,24 @@ p{
 /* Teacher section end */
 
 /* Testimonial Section Start */
-
-/* .testimonial .leftright ul li{
-    width: 34px;
-    height: 34px;
-    color: #fff;
+.slider-wrap{
+    position: relative;
+    height: 400px;
+}
+.slider-main{
+    position: absolute;
+    width: 100%;
+    padding-left: 110px;
+}
+.item{
+    width: 300px;
     display: inline-block;
-    background: #ea512e;
-    border-radius: 50%;
-    text-align: center;
-    padding: 4px;
-} */
-.carousel .quote{
+}
+.item .card{
+    transition: 0.5 ease-in-out;
+}
+
+/* .carousel .quote{
     width: 50px;
     height: 50px;
     display: inline-block;
@@ -218,15 +265,19 @@ p{
     width: 100%;
     height: 360px;
     
-}
+} */
 
 /* Testimonial Section End */
 
 /* Upcoming Event Section Start */
 .upcoming{
-    height: 1300px;
+    position: relative;
+    height: 1250px;
     background-image: url(../img/event-bg.jpg);
+    background-position: center center;
     background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
 }
 /* Upcoming Event Section End */
 
@@ -252,10 +303,6 @@ footer .socialicon ul li{
     text-align: center;
     padding: 4px;
     margin-right: 15px;
-}
-.redline {
-    border-bottom: 2px solid #ea512e;
-    
 }
 /* Footer section start */
 

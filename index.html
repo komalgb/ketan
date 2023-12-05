@@ -11,113 +11,116 @@
 </head>
 <body>
     <!-- navbar section start  -->
-    <nav class="navbar navbar-expand-lg bg-white">
-        <div class="container" style="padding-left: 40px; padding-right: 40px;">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/img/logo.png" alt="logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+   <header>
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+      <div class="container" style="padding-left: 40px; padding-right: 40px;">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 mb-lg-0">
+              <li class="nav-item dropdown">
+                  <a class="nav-link active dropdown-toggle text-orange fw-bold px-3" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Home
+                  </a>
+                  <ul class="dropdown-menu shadow p-3 mb-5 bg-white" style="border: none;">
+                    <li><a class="dropdown-item fw-bold text-orange py-2" href="#">Action</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Something else here</a></li>
+                  </ul>
+                </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-orange fw-bold px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Home
-                    </a>
-                    <ul class="dropdown-menu shadow p-3 mb-5 bg-white" style="border: none;">
-                      <li><a class="dropdown-item fw-bold text-orange py-2" href="#">Action</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Something else here</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Something else here</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle fw-bold px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Pages
-                    </a>
-                    <ul class="dropdown-menu shadow p-3 mb-5 bg-white" style="border: none;">
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Something else here</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Something else here</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Something else here</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Something else here</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Something else here</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle fw-bold px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Teacher
-                    </a>
-                    <ul class="dropdown-menu shadow p-3 mb-5 bg-white rounded" style="border: none;">
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle fw-bold px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Event
-                    </a>
-                    <ul class="dropdown-menu shadow p-3 mb-5 bg-white" style="border: none;">
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
-                      <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
-                    </ul>
-                  </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle fw-bold px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Class
-                </a>
-                <ul class="dropdown-menu shadow p-3 mb-5 bg-white" style="border: none;">
-                  <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
-                  <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle fw-bold px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Blog
-                </a>
-                <ul class="dropdown-menu shadow p-3 mb-5 bg-white" style="border: none;">
-                  <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
-                  <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-bold px-3" aria-disabled="true"> Contact </a>
-              </li>
-            </ul>
-            
-            <li class="nav-item dropdown list-unstyled">
-                <a class="nav-link dropdown-toggle fw-bold px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Language
-                </a>
-                <ul class="dropdown-menu shadow p-3 mb-5 bg-white" style="border: none;">
-                  <li><a class="dropdown-item fw-bold py-2" href="#">English</a></li>
-                  <li><a class="dropdown-item fw-bold py-2" href="#">English</a></li>
-                  <li><a class="dropdown-item fw-bold py-2" href="#">Something else here</a></li>
-                  <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
-                  <li><a class="dropdown-item fw-bold py-2" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <a href="javascript:void" class="btn button-orange text-white" style="border: none;" type="submit"> Contact Us </a>
-            
-          </div>
+                  <a class="nav-link dropdown-toggle fw-bold px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                  </a>
+                  <ul class="dropdown-menu shadow p-3 mb-5 bg-white" style="border: none;">
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle fw-bold px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Teacher
+                  </a>
+                  <ul class="dropdown-menu shadow p-3 mb-5 bg-white rounded" style="border: none;">
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle fw-bold px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Event
+                  </a>
+                  <ul class="dropdown-menu shadow p-3 mb-5 bg-white" style="border: none;">
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
+                    <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
+                  </ul>
+                </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fw-bold px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Class
+              </a>
+              <ul class="dropdown-menu shadow p-3 mb-5 bg-white" style="border: none;">
+                <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
+                <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle fw-bold px-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Blog
+              </a>
+              <ul class="dropdown-menu shadow p-3 mb-5 bg-white" style="border: none;">
+                <li><a class="dropdown-item fw-bold py-2" href="#">Action</a></li>
+                <li><a class="dropdown-item fw-bold py-2" href="#">Another action</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold px-3" aria-disabled="true"> Contact </a>
+            </li>
+          </ul>
+          
+          <li class="nav-item dropdown list-unstyled">
+              <a class="nav-link dropdown-toggle fw-bold px-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Language
+              </a>
+              <ul class="dropdown-menu shadow p-3 mb-5 bg-white" style="border: none;">
+                <li><a class="dropdown-item font-weight-normal" href="#">
+                  <img src="./assets/img/englishflag1.png" class="img-fluid" alt="flag"><span>English</span></a></li>
+                <li><a class="dropdown-item font-weight-normal" href="#"><img src="./assets/img/arabflag2.png" class="img-fluid" alt="flag"><span>اَلْعَرَبِيَّة</span></a></li>
+                <li><a class="dropdown-item font-weight-normal" href="#"><img src="./assets/img/germanyflag3.png" class="img-fluid" alt="flag"><span>Deutsch</span></a></li>
+                <li><a class="dropdown-item font-weight-normal" href="#"><img src="./assets/img/portugalflag4.png" class="img-fluid" alt="flag"><span>Português</span></a></li>
+                <li><a class="dropdown-item font-weight-normal" href="#"><img src="./assets/img/chinaflag5.png" class="img-fluid" alt="flag"><span>اَلْعَرَبِيَّة</span></a></li>
+              </ul>
+            </li>
+            <a href="javascript:void" class="btn button-orange text-white" style="border: none;" type="submit"> Contact Us </a>
+          
         </div>
-    </nav>
+      </div>
+  </nav>
+   </header>
     <!-- navbar section end  -->
 
     <!-- main banner start -->
@@ -156,8 +159,8 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="mt-5">
-              <img src="./assets/img/education-girl.png" alt="edu-girl" class="img-fluid d-inline-block m-auto">
+            <div class="pt-9" style="padding-left: 30px;">
+              <img src="./assets/img/education-girl.png" alt="edu-girl" class="img-fluid d-inline-block" style="width: 100%; height: 500px;">
             </div>
           </div>
         </div>
@@ -166,7 +169,7 @@
         <img src="./assets/img/cloud.png" alt="cloud">
       </div>
     </main> 
-    <!-- main banner ens -->
+    <!-- main banner end -->
 
     <!-- who we are section start -->
     <section class="who pt-4 pb-5">
@@ -180,7 +183,7 @@
           <div class="col-lg-6 mt-5">
             <h5>Who We Are</h5>
             <h2 class="fw-bold">Kindergarten and <br>Childhood is Our Passion</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.<br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Lorem ipsum dolor sit. Lorem, ipsum dolor. maecenas accumsan lacus vel facilisis.<br>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             <div class="row">
               <div class="col-lg-6">
@@ -196,7 +199,7 @@
                 </ul>
               </div>
             </div>
-            <a href="javascript:void" class="btn button-orange text-white" style="border: none;" type="submit"><h6> Read More </h6></a>
+            <a href="javascript:void" class="btn button-orange text-white" style="border: none;" type="submit"><h6 style="font-size: 14px;"> Read More </h6></a>
           </div>
         </div>
       </div>
@@ -205,13 +208,21 @@
 
     <!-- popular section start -->
     <section class="popular popular-bg position-relative">
+      <div class="container-fluid">
+        <div class="class-shape-1 position-absolute bottom-0">
+          <img src="./assets/img/class-shape-1.png" alt="class1" class="img-fluid">
+        </div>
+        <div class="class-shap-2 position-absolute end-0 bottom-0" >
+          <img src="./assets/img/class-shape-2.png" alt="class1" class="img-fluid">
+        </div>
+      </div>
       <div class="container pt-5" style="padding-left: 40px; padding-right: 40px;">
         <div style="text-align: center;">
           <h5 class="pb-1">Classes</h5>
           <h2 class="fw-bold pb-4">Popular Classes</h2>
-          <div class="row pb-5">
-            <div class="col-lg-4">
-              <div class="card" style="width: 21rem;">
+          <div class="row pb-10">
+            <div class="col-lg-4 col-sm-12">
+              <div class="card" style="width: 21rem; border: none;">
                 <img src="./assets/img/class-1.jpg" class="card-img-top" alt="card1">
                 <div class="card-body position-relative">
                   <div class="topbtn position-absolute end-0 top-0">
@@ -240,8 +251,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="card" style="width: 21rem;">
+            <div class="col-lg-4 col-sm-12">
+              <div class="card" style="width: 21rem; border: none;">
                 <img src="./assets/img/class-2.jpg" class="card-img-top" alt="card2">
                 <div class="card-body position-relative">
                   <div class="topbtn position-absolute end-0 top-0">
@@ -270,8 +281,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4">
-              <div class="card" style="width: 21rem;">
+            <div class="col-lg-4 col-sm-12">
+              <div class="card" style="width: 21rem; border: none;">
                 <img src="./assets/img/class-3.jpg" class="card-img-top" alt="card3">
                 <div class="card-body position-relative">
                   <div class="topbtn position-absolute end-0 top-0">
@@ -307,7 +318,18 @@
     <!-- popular section end -->
 
     <!-- care section start -->
-    <section class="care p-5">
+    <section class="care p-5 position-relative" style="height: 600px;">
+      <div class="container-fluid">
+        <div class="value2 position-absolute top-0 pt-1">
+          <img src="./assets/img/value-shape-1.png" alt="valueshape1" class="img-fluid">
+        </div>
+        <div class="value1 position-absolute bottom-0 pb-2" style="width:90px;">
+          <img src="./assets/img/value-shape-2.png" alt="valueshape1" class="img-fluid">
+        </div>
+        <div class="value3 position-absolute end-0 top-0 " style="z-index: -99;">
+          <img src="./assets/img/value-shape-3.png" alt="valueshape1" class="img-fluid">
+        </div>
+      </div>
       <div class="container" style="padding-left: 40px; padding-right: 40px;">
         <div class="row">
           <div class="col-lg-6">
@@ -315,15 +337,32 @@
           </div>
           <div class="col-lg-6">
             <h5>Our Core Values</h5>
-            <h2 class="fw-bold">We are Refunding Early Childcare Education</h2>
+            <h2 class="fw-bold pb-3">We are Refunding Early Childcare Education</h2>
+            <div class="row">
+              <div class="col-lg-2 mt-4"><span class="circleborder care-active" style="outline-color: #d3f5fe;">01</span></div>
+              <div class="col-lg-10">
+                <h4>Active Learning</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+            </div>
+            <div class="row">
+              <div class="col-lg-2 mt-4"><span class="circleborder care-fully" style="outline-color: #FBC9D5;">02</span></div>
+              <div class="col-lg-10"><h4>Active Learning</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+            </div>
+            <div class="row">
+              <div class="col-lg-2 mt-4"><span class="circleborder care-safe" style="outline-color: #FBD5A3;">03</span></div>
+              <div class="col-lg-10"><h4>Active Learning</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+            </div>
           </div>
-        </div>
+        </div> 
       </div>
+      
     </section>
     <!-- care section start -->
 
     <!-- Teacher Section Start -->
-    <div class="teacher">
+    <section class="teacher">
       <div class="container-fluid">
         <div class="row pt-5" style="text-align: center;">
           <h5>Our Core Teacher</h5>
@@ -392,32 +431,57 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- Teacher Section End -->
 
     <!-- Testimonial Section Start -->
-    <!-- <div class="testimonial parents-bg" style="width: 100%; height: 700px;">
-      <div class="container-fluid">
-        <div class="row pt-5 pb-5" style="text-align: center;">
-          <h5>Testimonials</h5>
-          <h2 class="fw-bold">What Parents Say About Us</h2>
+    <section class="testimonial pt-5 pb-5" >
+      <div class="container">
+        <div class="slider-wrap">
+          <div class="slider-main">
+            <div class="item">
+              <div class="card">
+                1
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                2
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                3
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                4
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                5
+              </div>
+            </div>
+            <div class="item">
+              <div class="card">
+                6
+              </div>
+            </div>
+            <div class="nav-button position-absolute start-0 end-0 top-50 d-flex justify-content-between">
+              <button onclick="prev()">Prev</button>
+              <button onclick="next()">Next</button>
+            </div>
+          </div>
         </div>
-        <div class="leftright row position-relative">
-          <ul class="list-unstyled position-absolute">
-            <li class="position-absolute start-0" style="margin-left: 30px;"><a href="javascript:void"></a><i class="fa-solid fa-chevron-left"></i></li>
-            <li class="position-absolute end-0" style="margin-right: 30px;"><a href="javascript:void"></a><i class="fa-solid fa-chevron-right"></i></li>
-          </ul>
-        </div>
-        <div class="row">
-          
-        </div>
-
       </div>
-    </div> -->
+    </section> 
+   
     <!-- Testimonial Section End -->
 
     <!-- test start -->
-    <div id="carouselExample" class="carousel slide parents-bg">
+    <!-- <div id="carouselExample" class="carousel slide parents-bg">
       <div class="carousel-inner">
         <div class="container" style="padding-left: 200px;">
           <div class="row pt-5 pb-5">
@@ -462,7 +526,7 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
+    </div> -->
     <!-- test end -->
 
     <!-- Upcoming Events Section Start -->
@@ -567,7 +631,7 @@
           <h2 class="fw-bold pb-4">Latest News</h2>
           <div class="row pb-5">
             <div class="col-lg-4">
-              <div class="card" style="width: 21rem;">
+              <div class="card" style="width: 21rem; border: none;">
                 <img src="./assets/img/blog-1.jpg" class="card-img-top" alt="card1">
                 <div class="card-body position-relative" style="background: #FDEEE9;">
                   <div class="row pt-1">
@@ -591,7 +655,7 @@
               </div>
             </div>
             <div class="col-lg-4">
-              <div class="card" style="width: 21rem;">
+              <div class="card" style="width: 21rem; border: none;">
                 <img src="./assets/img/blog-2.jpg" class="card-img-top" alt="card1">
                 <div class="card-body position-relative" style="background: #FDEEE9;">
                   <div class="row pt-1">
@@ -615,7 +679,7 @@
               </div>
             </div>
             <div class="col-lg-4">
-              <div class="card" style="width: 21rem;">
+              <div class="card" style="width: 21rem; border: none;">
                 <img src="./assets/img/blog-3.jpg" class="card-img-top" alt="card1">
                 <div class="card-body position-relative" style="background: #FDEEE9;">
                   <div class="row pt-1">
@@ -649,7 +713,7 @@
       <div class="footerfirst container-fluid ">
         <div class="container" style="padding-left: 40px; padding-right: 40px;">
           <div class="row pt-5">
-            <div class="col-lg-3 position-relative">
+            <div class="col-lg-3 col-md-12 position-relative">
               <div class="position-absolute" style="text-align: left;">
                 <h1 class="text-white fw-bold pb-3" style="font-size: 50px;">Ketan</h1>
                 <p style="color: #fff;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -663,17 +727,65 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-12">
               <h4>Contact Us</h4>
-              <div class="redline">
-
-              </div>
+              <!-- <hr size="5px" color="#EA512E" width="80px" z-index="1"> -->
+              <ul class="list-unstyled pt-4">
+                <div class="d-flex">
+                  <li class="text-white">
+                    <span style="color: #EA512E;"><i class="fa-solid fa-phone p-2 fs-5"></i></span>
+                  </li>
+                  <div><h6 style="font-size: 18px;">Phone</h6>
+                      <p class="text-white" style="font-size: 14px;">882-569-756</p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <li class="text-white">
+                    <span style="color: #EA512E;"><i class="fa-regular fa-envelope p-2 fs-5"></i></span>
+                  </li>
+                  <div><h6 style="font-size: 18px;">Email</h6>
+                      <p class="text-white" style="font-size: 14px;">hello@ketan.com</p>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <li class="text-white">
+                    <span style="color: #EA512E;"><i class="fa-solid fa-location-dot p-2 fs-5"></i></span>
+                  </li>
+                  <div><h6 style="font-size: 18px;">Address</h6>
+                      <p class="text-white" style="font-size: 14px;">175 5th Ave Premium Area, New York, NY 10010, United States</p>
+                  </div>
+                </div>
+              </ul>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-12">
               <h4>Activities</h4>
+              <div class="redline"></div>
+              <ul class="list-unstyled pt-4 style="padding-bottom:15px style="font-size: 14px;">
+                <li style="padding-bottom:15px"><a href="javascript:void()"></a>Maths Olympiad</li>
+                <li style="padding-bottom:15px"><a href="javascript:void()"></a>Art Competition</li>
+                <li style="padding-bottom:15px"><a href="javascript:void()"></a>English Novels</li>
+                <li style="padding-bottom:15px"><a href="javascript:void()"></a>Science Competition</li>
+                <li style="padding-bottom:15px"><a href="javascript:void()"></a>Teachers Day</li>
+                <li style="padding-bottom:15px"><a href="javascript:void()"></a>World Kids Day</li>
+              </ul>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 col-md-12">
               <h4>Photo Gallery</h4>
+              <div class="row p-1">
+                <div class="col-lg-4"><img src="./assets/img/footer-gallery-1.jpg" alt="footimg" class="img-fluid"></div>
+                <div class="col-lg-4"><img src="./assets/img/footer-gallery-2.jpg" alt="footimg" class="img-fluid"></div>
+                <div class="col-lg-4"><img src="./assets/img/footer-gallery-3.jpg" alt="footimg" class="img-fluid"></div>
+              </div>
+              <div class="row p-1">
+                <div class="col-lg-4"><img src="./assets/img/footer-gallery-4.jpg" alt="footimg" class="img-fluid"></div>
+                <div class="col-lg-4"><img src="./assets/img/footer-gallery-5.jpg" alt="footimg" class="img-fluid"></div>
+                <div class="col-lg-4"><img src="./assets/img/footer-gallery-6.jpg" alt="footimg" class="img-fluid"></div>
+              </div>
+              <div class="row p-1">
+                <div class="col-lg-4"><img src="./assets/img/footer-gallery-1.jpg" alt="footimg" class="img-fluid"></div>
+                <div class="col-lg-4"><img src="./assets/img/footer-gallery-2.jpg" alt="footimg" class="img-fluid"></div>
+                <div class="col-lg-4"><img src="./assets/img/footer-gallery-3.jpg" alt="footimg" class="img-fluid"></div>
+              </div>
             </div>
           </div>
         </div>
