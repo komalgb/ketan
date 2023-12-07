@@ -419,6 +419,28 @@ footer h4::before{
     bottom: 0px;
     left: 0px;
 }
+/* footer .contact ul li div.a:hover{
+    color: #EA512E;
+    transition: 0.4s;
+} */
+footer .activity ul li a:hover{
+    color: #EA512E;
+    transition: 0.4s linear;
+}
+footer .activity ul li::after{
+    position: absolute;
+    content: '';
+    left:0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    transition: 0.5s;
+}
+footer .activity ul li:hover::after{
+    color: #EA512E;
+    transition: 0.5s;
+    width: 100%;
+}
 /* /Footer section start */
 
 @keyframes move{
