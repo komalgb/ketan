@@ -1,13 +1,12 @@
-var sliderMain = document.querySelector('.slider-main');
-let item = sliderMain.getElementsByClassName('item');
-
+var sliderManin= document.querySelector(".slider-main");
+let item=document.getElementsByClassName("item");
 function next(){
-    sliderMain.append(item[0]);
+    sliderManin.append(item[0]);
 }
-
 function prev(){
-    sliderMain.prepend(item[item.length-1]);
-}
+    sliderManin.prepend(item[item.length-1]);
 
+}
 setInterval(
-    next, 1000)
+    next,5000
+)
