@@ -1,9 +1,13 @@
-var sliderMain = document.querySelector('slider-main');
+var sliderMain = document.querySelector('.slider-main');
 let item = sliderMain.getElementsByClassName('item');
-alert("Hello! I am an alert box!!");
-// function next(){
-//     sliderMain.append(item[0]);
-// }
-// function prev(){
-//     sliderMain.prepend(item[item.lenth-1]);
-// }
+
+function next(){
+    sliderMain.append(item[0]);
+}
+
+function prev(){
+    sliderMain.prepend(item[item.length-1]);
+}
+
+setInterval(
+    next, 1000)
