@@ -84,11 +84,8 @@ p{
 a.active{
     color: #EA512E !important;
 }
-nav{
-    font-size: 18px;
-}
 nav .nav-item a{
-    font-size: 14px;
+    font-size: 15px;
 }
 nav .nav-item a:hover{
     color: #ea512e;
@@ -539,29 +536,131 @@ footer h4::before{
     bottom: 0px;
     left: 0px;
 }
-/* footer .contact ul li div.a:hover{
-    color: #EA512E;
-    transition: 0.4s;
-} */
-footer .activity ul li a:hover{
-    color: #EA512E;
-    transition: 0.4s linear;
+footer .text ul li{
+    background: #EA512E;
+    width: 33px;
+    height: 33px;
+    border-radius: 50px;
+    margin: 7px;
 }
-footer .activity ul li::after{
-    position: absolute;
-    content: '';
-    left:0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    transition: 0.5s;
+footer .text ul li:hover{
+    background: #f5890d;
 }
-footer .activity ul li:hover::after{
-    color: #EA512E;
-    transition: 0.5s;
-    width: 100%;
+
+footer .text ul li:hover,
+footer ul li .fa-facebook-f:hover,
+footer ul li .fa-instagram:hover,
+footer ul li .fa-linkedin-in:hover,
+footer ul li .fa-twitter:hover
+{
+    margin-top: -2px;
+    transition: all 0.7s;
 }
+
+footer ul li .fa-facebook-f,
+footer ul li .fa-instagram,
+footer ul li .fa-linkedin-in,
+footer ul li .fa-twitter
+{
+    padding: 5px;
+    transition: all 0.7s;
+}
+.fotter-contact a:hover{
+    color: #ea512e !important;
+    width:100px;
+    border-bottom: 1px solid  #ea512e;
+    transition: 0.8s;
+}
+.fotter-contact a{
+    transition: 0.8s;
+}
+.activity a:hover{
+    color: #ea512e !important;
+    width:100px;
+    border-bottom: 1px solid  #ea512e;
+    transition: 0.8s;
+}
+.activity a{
+    transition: 0.8s;
+}
+
+footer .Gallary img:hover{
+    transform: scale(1.4);
+    transform: all .6s linear;
+    transition: all 0.9s;
+    }
+    
+    footer .Gallary img{
+        transform: all .6s linear;
+        transition: all 0.9s;
+        /* overflow: hidden; */
+    }
 /* /Footer section start */
+
+/* Buy Now Button Start */
+div.rotate {
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    width: 100px;
+    height: 37px;
+    color: #fff;
+    background-color: #06BF51 !important;
+    border-radius: 25px;
+    z-index: 999;
+    transition: all 10/3s linear;
+    animation: name;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes name {
+    0% {
+        transform: scale3d(1, 1, 1)
+    }
+
+    10%,
+    20% {
+        transform: scale3d(0.7, 0.7, 0.7) rotate3d(0, 0, 1, -3deg)
+    }
+
+    50%,
+    30%,
+    70%,
+    90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
+    }
+
+    40%,
+    60%,
+    90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 3deg);
+    }
+
+}
+
+.rotate a {
+    text-decoration: none;
+    line-height: 35px;
+    font-size: 13px;
+    color: #fff;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+div.rotate:hover {
+    background-color: #F94528 !important;
+    color: #ffffff !important;
+    transition: all .6s linear;
+}
+
+
+/* Buy Now Button End */
 
 @keyframes move{
     0%{}
