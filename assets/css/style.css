@@ -2,18 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Roboto+Flex:opsz,wght@8..144,200&family=Sacramento&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Roboto+Condensed:wght@100&family=Roboto+Flex:opsz,wght@8..144,200&family=Sacramento&display=swap');
-
+/* universal start */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     border: none;
 }
-:root{
-    --bg-light-orange: #fdf6ed;
-}
-
-/* universal start */
+:root{ --bg-light-orange: #fdf6ed; }
 .banner-bg{ background: #F1E7FF; }
 .popular-bg{ background: #FDF6ED;}
 .parents-bg{ background: #FFFFFF;}
@@ -22,15 +18,13 @@
 .care-fully{background: #FBC9D5;}
 .care-safe{background: #FBD5A3;}
 .footer-end{ background: #091629;}
-
 .text-orange{ color: #EA512E;}
 .text-yellow{ color: #F5890D;}
-
 .button-orange{ background: #EA512E;}
 .button-yellow{ background: #F5890D;}
 .f-size{ font-size: 56px; font-weight: 1000;}
 .px-space{ padding-left: 60px;}
-.pt-9{padding-top: 120px;}
+.pt-9{padding-top: 100px;}
 .pt-10{ padding-top: 190px; }
 .pb-10{padding-bottom: 120px;}
 .p-10{ padding: 60px;}
@@ -77,9 +71,9 @@ p{
     color: #fff;
     background-color: #ea512e;
 }
+/*/universal end */
 
-/* universal end */
-
+/* Index Page CSS Start */
 /* Navbar Section Start  */
 a.active{
     color: #EA512E !important;
@@ -121,7 +115,7 @@ nav .dropdown:hover .dropdown-menu{
     background-position: center center;
     background-size: cover;
 }
-.shape-1, .shape-2, .shape-3, .shape-4{
+.shape-1, .shape-2, .shape-3, .shape12{
     width: 115px;
     height: 110px;
 }
@@ -141,16 +135,17 @@ nav .dropdown:hover .dropdown-menu{
     z-index: 9;
     animation: move 2s linear alternate infinite;
 }
-.shape-4{
-    top: 82%;
-    left: .7%;
-    animation: move1 2s linear alternate infinite;
+.shape12 {
+    top: 12%;
+    left: 560px;
+    margin-top: 480px;
+    animation: move4 4s linear infinite alternate;
 }
 /* .shape-5{
     width: 130px;
     height: 120px;
-    animation: move2 2s linear alternate infinite;
-    transition: 2s ease-out;
+    animation: move5 5s linear alternate infinite;
+    transition: 0.2s;
 } */
 .mt-5 img{
     width: 100%;
@@ -223,6 +218,27 @@ nav .dropdown:hover .dropdown-menu{
 /* /who we are section end */
 
 /* popular section start */
+.latest .card,
+.popular .card{
+    border: none;
+}
+.latest .card:hover img,
+.popular .card:hover img {
+    transform: rotate(2deg) scale(1.07);
+    transform: all 0.8s linear;
+    transition: all 0.8s;
+}
+.latest .card img,
+.popular .card img{
+    transition: all 0.4s;
+    transform: all 0.3s linear;
+}
+.latest .card-title:hover,
+.popular .card-title:hover {
+    color: #fd7e14;
+    cursor: pointer;
+    transition: all 1s;
+}
 .topbtn a{
     text-decoration: none;
     display: inline-block;
@@ -234,49 +250,53 @@ nav .dropdown:hover .dropdown-menu{
     background-color: #F5890D;
     transition-duration: 1s;
 }
-.cardtext h4, p{
-    text-align: left;
-}
-.cardtext h4:hover{
-    color: #EA512E;
-    transition-duration: 1s;
-}
-h4{
-    font-weight: 600;
-}
 .cardtext .pb-4 {
     border: none;
     border-bottom: 1px dashed #ea512e;
-}
-
+}  
 /* /popular section end */
 
-/* Care Section Start */
-.circleborder{
-    width: 80px;
-    height: 100px;
-    border-radius: 50%;
-    padding: 18px;
-    outline-style:solid;
-    outline-offset: 3px;
-    outline-width: 1px;
-    font-size: larger;
+/* care Section Start */
+.care .number{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50px;
+    display: inline-block;
+    margin-top: 1.5%;
+    margin-right: 20px;
+    font-size: 20px;
+    color: #1B0238;
+    border: 2px solid #fff;
+    outline-offset: 2px;
+    transition: 0.5s;
+    cursor: pointer;
 }
-.circleborder:hover{
+.care .number:hover{
     background: #EA512E;
-    color: #fff;
-    transition: 0.7s ease;
+    transition: 0.5s;
+    outline-color: #EA512E;
 }
-
-/* /Care Section End */
+.care .care-active{
+    outline: 1px solid #d3f5fe;
+}
+.care .care-fully{
+    outline: 1px solid #FBC9D5;
+}
+.care .care-safe{
+    outline: 1px solid #FBD5A3;
+}
+/* /care Section End */
 
 /* Teacher section start */
+.latest .card,
 .teachers-core{
     width: 100%;
     height: auto;
     background: url(../img/teacher-bg.jpg);
 }
-.teachers-core .social-meida {
+.teachers-core .social-media {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -284,7 +304,7 @@ h4{
     margin-bottom: -60px;
     transition: all 0.4s ease-in;
 }
-.teacher-core .social-meida ul li{
+.teacher-core .social-media ul li{
     width: 32px;
     height: 32px;
     display: inline-block;
@@ -294,21 +314,13 @@ h4{
     padding: 4px;
     margin-right: 15px;
 }
-
-.teachers-core .social-meida.button-yellow {
-
-    background-color: #ea512e !important;
-}
-
-.teachers-core .teacher-image:hover .social-meida {
+.teachers-core .teacher-image:hover .social-media {
     margin-bottom: 0px;
     transition: all 0.6s ease-in;
 }
-
 .teacher-image.boy1 {
     z-index: 999 !important;
 }
-
 .boy1::before {
     position: absolute;
     content: "";
@@ -325,7 +337,6 @@ h4{
     -webkit-animation: border-transform-default 10s linear infinite alternate forwards;
     animation: border-transform-default 10s linear infinite alternate forwards;
 }
-
 .boy1::after {
     position: absolute;
     content: "";
@@ -342,87 +353,19 @@ h4{
     -webkit-animation: border-transform-default 50s linear infinite alternate forwards;
     animation: border-transform-default 30s linear infinite alternate forwards;
 }
-
 @keyframes border-transform-default {
-
-
     0%,
-    100% {
-        border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
-    }
-
-    14% {
-        border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
-    }
-
-    28% {
-        border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
-    }
-
-    42% {
-        border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
-    }
-
-    56% {
-        border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
-    }
-
-    70% {
-        border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
-    }
-
-    84% {
-        border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
-    }
+    100% { border-radius: 63% 37% 54% 46%/55% 48% 52% 45%; }
+    14% { border-radius: 40% 60% 54% 46%/49% 60% 40% 51%; }
+    28% { border-radius: 54% 46% 38% 62%/49% 70% 30% 51%; }
+    42% { border-radius: 61% 39% 55% 45%/61% 38% 62% 39%; }
+    56% { border-radius: 61% 39% 67% 33%/70% 50% 50% 30%; }
+    70% { border-radius: 50% 50% 34% 66%/56% 68% 32% 44%; }
+    84% { border-radius: 46% 54% 50% 50%/35% 61% 39% 65%; }
 }
 /* Teacher section end */
 
 /* /Testimonial Section Start */
-/* .card.teacher{
-    height: auto;
-    padding: 30px;
-    text-align: center;
-    border-radius: 49%;
-    border: none;
-    background-color: #fee9ca;;
-}
-.card.teacher div{
-    width: 65px;
-    height: auto;
-    line-height: 75px;
-    border-radius: 50%;
-    background: #fff;
-    margin: auto;
-    transition: all 0.3s linear;
-    margin-bottom: 10px;
-}
-.card.teacher:hover div{
-    background:#EA512E;
-    transition: all 0.3s linear ;
-}
-.card.teacher:hover div .fa-quote-left{
-    color: #fff !important;
-    transition: all 0.3s linear;
-}
-
-.testimonial .nav-button button{
-    width: 50px;
-    height: 50px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 10px;
-    text-align: center;
-    border-radius: 50%;
-    background: #EA512E;
-    transition: 0.3s linear;
-    margin-left: -40px;
-    margin-right: -40px
-}
-.testimonial .nav-button button:hover{
-    background: #f5890d;
-    transition: 0.3s linear;
-} */
 .slider-wrap{
     position: relative;
     overflow-x: hidden;
@@ -433,24 +376,21 @@ h4{
     width:250%;
 }
 .item{
+    width: 340px;
     height: 320px;
     margin: 15px;
-    width: 340px;
     height:auto;
     display: inline-block;
 }
 .item .card{
     height: 350px;
-    background-color: #FEE9CA;
-    border: none;
+    background: #FEE9CA;
     padding-right: 10px;
+    border: none;
 }
 .item .card h4{
     font-size: 22px;
     font-weight: 700;
-}
-.item .card .img-fluid{
-    margin-right: 50px;
 }
 .item .card .text-orange1{
     background-color:#fff !important;
@@ -460,21 +400,26 @@ h4{
     border-radius: 50%;
     margin-left: 135px;;
     padding : 15px;
-    color:#cd1f05 !important;
+    color:#ea512e !important;
     margin-bottom: 25px;
     transition: all .5s ;
 }
 .item .card .text-orange1:hover{
     color:#fff !important;
-    background:#cd1f05 !important;
+    background:#ea512e !important;
     transition: all .5s;
 }
 .card:hover #quote{
     color:#fff;
-    background-color:#cd1f05;
+    background-color:#ea512e;
 }
 .testmonial button{
-    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    color: #fff;
+    background: #ea512e;
+    margin-left: 0px;
 }
 /* /Testimonial Section End */
 
@@ -491,7 +436,7 @@ h4{
 /* /Upcoming Event Section End */
 
 /* Latest Section Start */
-
+/* .... See Css In Popular Section .... */
 /* /Latest Section End */
 
 /* Footer section start */
@@ -506,16 +451,6 @@ footer, .footersecond{
     height: 100px;
     background: #091629;
     color: #fff;
-}
-footer .socialicon ul li{
-    width: 32px;
-    height: 32px;
-    display: inline-block;
-    background: #ea512e;
-    border-radius: 50%;
-    text-align: center;
-    padding: 4px;
-    margin-right: 15px;
 }
 footer .photogallery{
     display: grid;
@@ -565,13 +500,13 @@ footer ul li .fa-twitter
     padding: 5px;
     transition: all 0.7s;
 }
-.fotter-contact a:hover{
+.footer-contact a:hover{
     color: #ea512e !important;
     width:100px;
     border-bottom: 1px solid  #ea512e;
     transition: 0.8s;
 }
-.fotter-contact a{
+.footer-contact a{
     transition: 0.8s;
 }
 .activity a:hover{
@@ -583,18 +518,15 @@ footer ul li .fa-twitter
 .activity a{
     transition: 0.8s;
 }
-
 footer .Gallary img:hover{
-    transform: scale(1.4);
-    transform: all .6s linear;
+    transform: scale(1.2);
+    transform: all .6s;
     transition: all 0.9s;
-    }
-    
-    footer .Gallary img{
-        transform: all .6s linear;
-        transition: all 0.9s;
-        /* overflow: hidden; */
-    }
+}
+footer .Gallary img{
+    transform: all .6s;
+    transition: all 0.9s;
+}
 /* /Footer section start */
 
 /* Buy Now Button Start */
@@ -614,36 +546,19 @@ div.rotate {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-
 @keyframes name {
-    0% {
-        transform: scale3d(1, 1, 1)
-    }
-
+    0% { transform: scale3d(1, 1, 1) }
     10%,
-    20% {
-        transform: scale3d(0.7, 0.7, 0.7) rotate3d(0, 0, 1, -3deg)
-    }
-
+    20% { transform: scale3d(0.7, 0.7, 0.7) rotate3d(0, 0, 1, -3deg) }
     50%,
     30%,
     70%,
-    90% {
-        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg)
-    }
-
+    90% { transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg) }
     40%,
     60%,
-    90% {
-        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg)
-    }
-
-    100% {
-        transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 3deg);
-    }
-
+    90% { transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg) }
+    100% { transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 3deg); }
 }
-
 .rotate a {
     text-decoration: none;
     line-height: 35px;
@@ -652,15 +567,19 @@ div.rotate {
     font-weight: bold;
     padding-left: 10px;
 }
-
 div.rotate:hover {
     background-color: #F94528 !important;
     color: #ffffff !important;
     transition: all .6s linear;
 }
+/* /Buy Now Button End */
 
-
-/* Buy Now Button End */
+/* Arrow Button Start  */
+/* .arrow{
+    position: absolute;
+    color: #fff;
+} */
+/* /Arrow Button End  */
 
 @keyframes move{
     0%{}
@@ -668,56 +587,39 @@ div.rotate:hover {
 }
 @keyframes move1{
     0%{}
-    100%{left:45%}
+    50%{left:45%}
 }
-@keyframes move2{
+@keyframes move5{
     0%{}
     100%{left:92%}
 }
-
+@keyframes move4 {
+    1% { top: 1% }
+    0% { bottom: 1% }
+}
 @keyframes border-transform-default {
-    0%, 100% {
-        border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
-    }
-    14% {
-        border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
-    }
-    28% {
-        border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
-    }
-    42% {
-        border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
-    }
-    56% {
-        border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
-    }
-    70% {
-        border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
-    }
-    84% {
-        border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
-    }
+    0%, 100% { border-radius: 63% 37% 54% 46%/55% 48% 52% 45%; }
+    14% { border-radius: 40% 60% 54% 46%/49% 60% 40% 51%; }
+    28% { border-radius: 54% 46% 38% 62%/49% 70% 30% 51%; }
+    42% { border-radius: 61% 39% 55% 45%/61% 38% 62% 39%; }
+    56% { border-radius: 61% 39% 67% 33%/70% 50% 50% 30%; }
+    70% { border-radius: 50% 50% 34% 66%/56% 68% 32% 44%; }
+    84% { border-radius: 46% 54% 50% 50%/35% 61% 39% 65%; }
 }
 @keyframes border-transform-default1 {
-    0%, 100% {
-        border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
-    }
-    14% {
-        border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
-    }
-    28% {
-        border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
-    }
-    42% {
-        border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
-    }
-    56% {
-        border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
-    }
-    70% {
-        border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
-    }
-    84% {
-        border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
-    }
+    0%, 100% { border-radius: 63% 37% 54% 46%/55% 48% 52% 45%; }
+    14% { border-radius: 40% 60% 54% 46%/49% 60% 40% 51%; }
+    28% { border-radius: 54% 46% 38% 62%/49% 70% 30% 51%; }
+    42% { border-radius: 61% 39% 55% 45%/61% 38% 62% 39%; }
+    56% { border-radius: 61% 39% 67% 33%/70% 50% 50% 30%; }
+    70% { border-radius: 50% 50% 34% 66%/56% 68% 32% 44%; }
+    84% { border-radius: 46% 54% 50% 50%/35% 61% 39% 65%; }
 }
+/* /Index Page CSS End */
+
+/* All Buttons Hover --- fix me */
+/* Shape3 and Shape5 --- Fix me */
+/* Gallery Focus to do */
+/* Teacher Buttons Style ---- Fix me */
+/* Testimonial Buttons Hover---Fix me */
+/* Navigation some issues and Animation on Language ----fix me */
