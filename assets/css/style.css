@@ -22,6 +22,9 @@
 .text-yellow{ color: #F5890D;}
 .button-orange{ background: #EA512E;}
 .button-yellow{ background: #F5890D;}
+.about-testimonial{ background: #FEF3E6;}
+.do-you{ background: #FDEEE9;}
+.strebez{ background: #FDF9F4;}
 .f-size{ font-size: 56px; font-weight: 1000;}
 .px-space{ padding-left: 60px;}
 .pt-9{padding-top: 100px;}
@@ -623,3 +626,120 @@ div.rotate:hover {
 /* Teacher Buttons Style ---- Fix me */
 /* Testimonial Buttons Hover---Fix me */
 /* Navigation some issues and Animation on Language ----fix me */
+
+/* About Page CSS Start */
+/* About Banner Section Start */
+.about-banner{
+    width: 100%;
+    height: 510px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url(../img/about-banner-1.jpg);
+    color: #fff;
+    padding-top: 220px;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+/* About Banner Section End */
+
+/* Numers Section Start */
+.students-color{ background: #579CAF;}
+.teachers-color{ background: #D7A050;}
+.classroom-color{ background: #6A4C84;}
+.bus-color{ background: #CB572E;}
+.numbers{ 
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center center;
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url(../img/about-fun-facts-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+.box{
+    width: 90%;
+    height: 220px;
+    border-radius: 15px;
+    padding: 75px 45px;
+    opacity: 0.90;
+}
+/* Numbers Section End */
+
+/* Expert Teacher Section Start */
+.expert .img-fluid{
+    width: 90%;
+    border-radius: 15px;
+}
+/* Expert Teacher Section End */
+
+/* Class Registration Section Start */
+.online-class{
+    width: 100%;
+    height: 750px;
+    background-image: url(../img/online-class-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.online-class form input{
+    width: 100%;
+    padding: 19px;
+    border: 1px solid #faf2f2;
+    border-radius: 10px;
+}
+/* .online-class form input:hover{
+    border: 1px solid red;
+} */
+/* Class Registration Section End */
+
+/* Testimonial Section Start */
+.about-testimonial{
+    width: 100%;
+    height: 600px;
+}
+/* Testimonial Section End */
+
+/* Pricing Section Start */
+/* Pricing Section End */
+
+/* Do You Want Section Start */
+.do{
+    width: 100%;
+    height: 250px;
+}
+.do form input{
+    width: 40%;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.do form button:hover{
+    background: #091629;
+    transition: 7px all;
+}
+/* Do You Want Section End */
+
+/* Partners Section Start */
+.strebez{
+    width: 100%;
+    height: 220px;
+}
+/* Partners Section End */
+/* About Page CSS End */
+
+/* Gallery Page CSS Start */
+
+
+/* Gallery Page CSS End */
+
+
+
+
+
+
+
