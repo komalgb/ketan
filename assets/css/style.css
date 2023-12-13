@@ -749,6 +749,20 @@ div.rotate:hover {
 }
 /* Gallery Page CSS End */
 
+/* Event Page CSS Starts */
+.event .box{
+    background: #FDEEE9;
+    width: 48%;
+    height: 200px;
+    margin: 10px;
+    padding-top: 50px;
+}
+.event .box img{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+/* Event Page CSS End */
 
 /* Class Details Page CSS Start */
 .education img{
