@@ -897,7 +897,7 @@ div.rotate:hover {
 
 /* Terms Page CSS Start */
 .terms .container{
-    width: 70%;
+    width: 100%;
 }
 .terms .accordion .accordion-item{
     border: 2px solid #F3F3F3;
